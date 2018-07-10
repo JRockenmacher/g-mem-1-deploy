@@ -25,3 +25,6 @@ Error: connect ECONNREFUSED 127.0.0.1:5432
 - [ ] how to configure knexfile/ nodemodules
 - [ ] is ```\'../knexfile\'``` one folder up
 - [ ] ON NEW DB 7-10: migration table pres locally
+- [ ] Could migrating before the heroku-pg addon be the cause of a failed migration table making it to heroku, thus breaking my shizz?
+    - 1st error after seed: 503
+    - migrations table present
