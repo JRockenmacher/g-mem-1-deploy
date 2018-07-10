@@ -19,4 +19,7 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('resolutions').insert(data)
     })
+    .then( () => {
+      knex.raw(`ALTER SEQUENCE resolutions_id_seq RESTART WITH ${data.length + 1}`)
+    })
 }
